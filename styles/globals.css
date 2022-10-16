@@ -1,0 +1,490 @@
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  font-size: '16px';
+  line-height: 1.375;
+  color: #000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+}
+
+/* //Start nav design */
+.navigationBar ul {
+  padding: 0;
+  list-style: none;
+  background: #04cebc;
+}
+.navigationBar ul li {
+  display: inline-block;
+  position: relative;
+  line-height: 21px;
+  text-align: left;
+}
+
+.text{
+  color:black;
+  background-color: red;
+}
+
+.navigationBar ul li a {
+  display: block;
+  padding: 8px 25px;
+  color: black;
+  text-decoration: none;
+}
+.navigationBar ul li a:hover {
+  color: white;
+  background: rgb(81, 81, 81);
+}
+.navigationBar ul li ul.dropdown {
+  min-width: 100%;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  width: fit-content;
+}
+.dropdown li a {
+  color: black;
+}
+
+.navigationBar ul li:hover ul.dropdown {
+  display: block; /* Display the dropdown */
+}
+.navigationBar ul li ul.dropdown li {
+  display: block;
+}
+/* end nav design */
+
+.nextDev {
+  width: 440px;
+  height: 340px;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.599);
+}
+.content-span {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.press-show {
+  display: none;
+}
+.joinusButton::placeholder {
+  color: white;
+  max-width: 100%;
+  width: 100%;
+}
+.mobileNab {
+  display: none;
+}
+.navigationContainer {
+  background-color: #fabf2c;
+  color: #253137;
+  outline: none;
+  position: relative;
+}
+.navMainDiv > a {
+  padding: 10px;
+  color: #253137;
+  text-decoration: none;
+  font-size: 18px;
+}
+.navMainDiv > a:hover {
+  background-color: rgb(81, 81, 81);
+  color: #fff;
+}
+.navMainDiv > a > svg:hover {
+  color: #fff;
+}
+.navIcons {
+  width: 30px;
+  height: 30px;
+}
+/* navcard */
+.navCard {
+  width: fit-content;
+  background-color: #d3d0d0;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: absolute;
+  z-index: 99999;
+  left: 260px;
+}
+
+.market {
+  left: 315px;
+}
+.people {
+  left: 590px;
+}
+.cryptopedia {
+  left: 730px;
+}
+
+.navCardList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.navCardList > span {
+  cursor: pointer;
+  padding: 10px 15px;
+}
+.navCardList > span > a {
+  text-decoration: none;
+  color: black;
+}
+.navCardList > span:hover {
+  background-color: #253137;
+  color: #fff;
+}
+.navCardList > span:hover > a {
+  color: #fff;
+}
+.mainNavigation,
+.mainNav {
+  display: none;
+}
+.searchInput {
+  background-color: #253137;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 50px;
+  top: 155px;
+  z-index: 9999;
+}
+.searchInputField {
+  padding: 7px;
+  outline: none;
+  border: none;
+}
+.searchButton {
+  background-color: #00FFE2;
+  color: black;
+  padding: 7px 10px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+.searchButton:hover {
+  background-color: #000;
+  color: white;
+}
+
+.mobileSearch {
+  display: none;
+}
+/* scroll design */
+.mobileNavScrollthumb::-webkit-scrollbar {
+  width: 5px;
+}
+.mobileNavScroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.mobileNavScroll::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.socialMediaIcon {
+  display: none;
+}
+
+.socialMediaFull {
+  display: block;
+  position: 'sticky';
+  top: '20px';
+}
+/* author */
+.author {
+  display: 'flex';
+  align-items: 'center';
+  justify-content: 'center';
+  width: 30%;
+}
+@media only screen and (max-width: 1200px) {
+  /* Social Media */
+  .socialMediaIcon {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 99999;
+    bottom: 0;
+    /* background-color: #04cebc; */
+  }
+  /* .socialMediaFull{
+     max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 99999;
+    bottom: 100px;
+  } */
+  .showNavbar {
+    display: none;
+  }
+  .author {
+    width: 40%;
+  }
+  .authorName {
+    font-size: 10px;
+  }
+  /* .carousel {
+    display: none;
+  } */
+  .mobileView {
+    display: flex;
+    flex-direction: column;
+  }
+  .press {
+    display: none;
+  }
+  .press-show {
+    display: block;
+    margin-top: 300px;
+  }
+  .slider {
+    display: none;
+  }
+  .navigationContainer {
+    display: none;
+  }
+
+  /* Main navigation */
+  .mainNav {
+    background-color: #253137;
+    padding: 10px 50px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .mainNavigation {
+    display: flex;
+    color: #000;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    align-items: flex-start;
+    width: 230px;
+    z-index: 99999;
+    padding-left: 15px;
+    overflow-y: hidden;
+    position: absolute;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+    box-shadow: 0 1px 20px 0 rgb(0 0 0 / 10%);
+  }
+  .mainNavigation::-webkit-scrollbar {
+    display: none;
+  }
+  .mainNavigation > span {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .mainNavigationTitle {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .mainNavigation > a {
+    font-size: 13px;
+    font-weight: 400;
+    padding: 10px 0;
+    color: #253137;
+  }
+  .mobileNab {
+    display: block;
+  }
+  .mainNav {
+    display: block;
+  }
+  /* mobile search */
+  .mobileSearch {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 50px;
+  }
+  .mobileSearchIcon {
+    flex: 1;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+  .mobileSearch > form > input {
+    flex: 2;
+    outline: 0;
+    border: 0;
+  }
+  .mobileCloseIcon {
+    flex: 1;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+  .socialMediaFull {
+    display: none;
+  }
+  .editorChoiceSinglePage {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .footer {
+    display: none;
+  }
+  .joinusButton {
+    width: 100%;
+  }
+  .joinusButton::placeholder {
+    color: white;
+    font-size: 10px;
+    width: 100%;
+  }
+  .mobileViewSocialIcon{
+    /* background-color: #888; */
+    background-color: 'green',
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .singlePageContent {
+    width: fit-content;
+  }
+  .author {
+    width: 60%;
+  }
+  .press-show {
+    display: block;
+    margin-top: 200px;
+  }
+  .nextDev {
+    width: 100%;
+    height: fit-content;
+    font-size: 14px;
+  }
+  .tabs {
+    display: flex;
+    width: fit-content;
+    font-size: 11px;
+  }
+
+  .news-title {
+    font-size: 14px;
+  }
+  .addDiv {
+    font-size: 14px;
+  }
+  .social {
+    flex-direction: column;
+  }
+  .newsLetterContent {
+    text-align: center;
+  }
+  .newLetterForm {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .about-footer-content {
+    display: none;
+  }
+}
+
+.article-image {
+  overflow-x: auto;
+}
+.article-image > img {
+  width: 100% !important;
+}
+
+.story__img article__poster {
+  width: 100% !important;
+}
+
+/* contact form */
+
+.contactUsMain{
+  background-color: #fff;
+}
+
+.contact-form{
+  padding: 20px;
+}
+.contact-form-btn{
+  padding-left: 20px;
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.contact-form-btn > button {
+  padding:10px 40px;
+  border-radius: 100px;
+}
+.contact-form > input[type="text"],input[type="email"],input[type="phone"],input[type="textarea"]{
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact-form > textarea{
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.mainInfoContact{
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+  gap:20px;
+}
+.contactDetils{
+  display:flex;
+  flex-direction: column;
+  /* align-items:center; */
+  justify-content: flex-start;
+}

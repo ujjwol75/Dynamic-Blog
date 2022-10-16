@@ -1,0 +1,28 @@
+.navbar{
+    background:yellow;
+}
+.navbar > ul >li{
+    position: relative;
+    float: left;
+}
+.navbar >ul {
+    list-style: none;
+}
+.navbar > ul >li>a{
+    font-size:18px;
+    padding:10px 15px;
+    color:#000;
+    text-decoration: none;
+    display: block;
+}
+.navbar > ul >li>a:hover{
+background-color: #253137;
+  color: #fff;
+}
+
+.navbar >ul >li>ul>li{
+    position: absolute;
+    background-color: #fff;
+    display: block;
+
+}

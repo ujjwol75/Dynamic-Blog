@@ -1,0 +1,40 @@
+.maintext{
+text-decoration: none !important;
+margin:0;
+ padding-top:5px;
+
+}
+
+.text{
+    color: #27272a;
+    font-size: 1rem;
+    padding-top:10px;
+    font-weight: bold;
+   
+}
+.text:hover{
+    /* font-size: 18px; */
+    color: #27282d;
+    font-weight: blod;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.line{
+    width:100%;
+    background-color: rgba(6, 6, 6, 0.139);
+    height:1px;
+    
+}
+.viewers{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:5px;
+}
+@media only screen and (max-width: 400px) {
+.maintext{
+font-size:10px;
+
+}
+
+}

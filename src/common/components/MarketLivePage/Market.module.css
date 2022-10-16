@@ -1,0 +1,16 @@
+
+.table thead{
+  background: 'rgba(38,137,13,1)' !important;
+  text-align: center;
+}
+.table tr:nth-child(2n) {
+  /* background-color: whitesmoke; */
+  text-align: center;
+
+}
+
+
+
+.table tr:nth-child(2n):hover, .table tr:hover {
+  background-color: #fffef4;
+}
